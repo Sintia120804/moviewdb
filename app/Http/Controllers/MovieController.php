@@ -50,7 +50,7 @@ class MovieController extends Controller
             'category_id' => $validated['category_id'],
             'year' => $validated['year'],
             'actors' => $validated['actors'],
-            'cover_image' => $coverPath['cover_image'],
+            'cover_image' => $coverPath,
         ]);
 
         return redirect('/')->with('Success', 'Data Movie Berhasil Disimpan.');
